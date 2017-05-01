@@ -1,7 +1,9 @@
 package com.project.lithodemo;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.litho.LithoWebKitInspector;
 import com.facebook.soloader.SoLoader;
+import com.facebook.stetho.Stetho;
 
 public class MyApplication extends android.app.Application {
 
@@ -14,5 +16,11 @@ public class MyApplication extends android.app.Application {
 
         //  Initialize Litho
         SoLoader.init(this, false);
+
+        //  Initialize Stetho
+        Stetho.initialize(
+                Stetho.newInitializerBuilder(this)
+                        .enableWebKitInspector(new LithoWebKitInspector(this))
+                        .build());
     }
 }
