@@ -50,7 +50,7 @@ public class ArticleLargeImageItemSpec {
                 .child(
                         Text.create(c)
                                 .text(title)
-                                .textSizeSp(16)
+                                .textSizeSp(20)
                                 .textColorRes(R.color.black)
                                 .withLayout()
                                 .marginDip(TOP, 6))

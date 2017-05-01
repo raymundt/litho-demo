@@ -29,7 +29,7 @@ public class ArticleTextOnlyItemSpec {
                 .child(
                         Text.create(c)
                                 .text(title)
-                                .textSizeSp(16)
+                                .textSizeSp(20)
                                 .withLayout()
                                 .clickHandler(ArticleTextOnlyItem.onClick(c)))
                 .clickHandler(ArticleSmallImageItem.onClick(c))

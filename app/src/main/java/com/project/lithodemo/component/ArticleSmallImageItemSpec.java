@@ -43,7 +43,7 @@ public class ArticleSmallImageItemSpec {
                 .child(
                         Text.create(c)
                                 .text(title)
-                                .textSizeSp(16)
+                                .textSizeSp(20)
                                 .textColorRes(R.color.black)
                                 .withLayout()
                                 .widthDip(0)

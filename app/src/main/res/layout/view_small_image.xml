@@ -15,7 +15,7 @@
         android:layout_marginRight="6dp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        android:textSize="16sp"/>
+        android:textSize="20sp"/>
 
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/img_thumbnail"
