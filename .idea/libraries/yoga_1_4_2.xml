@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="yoga-1.4.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/c092e103a6d5d91609db72a64e0a930821aeb382/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/c092e103a6d5d91609db72a64e0a930821aeb382/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

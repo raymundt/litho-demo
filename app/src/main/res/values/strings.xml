@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Litho Demo</string>
+
+    <string name="content_description">Image</string>
+
+    <string name="btn_recycler_view">Recycler View</string>
+    <string name="btn_litho_view">Litho</string>
+
+    <string name="title_recycler_view">Litho Demo - Recycler View</string>
+    <string name="title_litho_view">Litho Demo - Litho</string>
+</resources>

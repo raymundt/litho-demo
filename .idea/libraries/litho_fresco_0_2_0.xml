@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="litho-fresco-0.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/2b66146d814ba4bbfc55c20b4749e6eb9b915795/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/2b66146d814ba4bbfc55c20b4749e6eb9b915795/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.litho/litho-fresco/0.2.0/2ba6e37a81a23436112734b5cbd2b3564196bf4b/litho-fresco-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
