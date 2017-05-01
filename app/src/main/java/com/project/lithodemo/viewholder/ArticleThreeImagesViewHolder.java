@@ -1,4 +1,4 @@
-package com.project.lithodemo.adapter;
+package com.project.lithodemo.viewholder;
 
 import android.net.Uri;
 import android.view.View;

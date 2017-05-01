@@ -1,4 +1,4 @@
-package com.project.lithodemo.adapter;
+package com.project.lithodemo.viewholder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

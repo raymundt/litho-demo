@@ -7,6 +7,10 @@ import android.view.ViewGroup;
 
 import com.project.lithodemo.R;
 import com.project.lithodemo.object.Article;
+import com.project.lithodemo.viewholder.ArticleLargeImageViewHolder;
+import com.project.lithodemo.viewholder.ArticleSmallImageViewHolder;
+import com.project.lithodemo.viewholder.ArticleThreeImagesViewHolder;
+import com.project.lithodemo.viewholder.ArticleViewHolder;
 
 import java.util.ArrayList;
 
