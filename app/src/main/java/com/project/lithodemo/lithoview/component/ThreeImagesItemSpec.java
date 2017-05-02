@@ -1,4 +1,4 @@
-package com.project.lithodemo.component;
+package com.project.lithodemo.lithoview.component;
 
 import android.view.View;
 import android.widget.Toast;
@@ -27,7 +27,7 @@ import static com.facebook.yoga.YogaEdge.RIGHT;
 import static com.facebook.yoga.YogaEdge.TOP;
 
 @LayoutSpec
-public class ArticleThreeImagesItemSpec {
+public class ThreeImagesItemSpec {
 
     @PropDefault
     protected static final float aspectRatio = 16f / 9;
@@ -94,7 +94,7 @@ public class ArticleThreeImagesItemSpec {
                                                 .marginDip(RIGHT, 3)
                                                 .flex(1))
                 )
-                .clickHandler(ArticleSmallImageItem.onClick(c))
+                .clickHandler(ThreeImagesItem.onClick(c))
                 .build();
     }
 

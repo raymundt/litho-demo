@@ -1,4 +1,4 @@
-package com.project.lithodemo.component;
+package com.project.lithodemo.lithoview.component;
 
 import android.webkit.WebView;
 import android.webkit.WebViewClient;

@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.project.lithodemo.R;
-import com.project.lithodemo.adapter.RecyclerViewAdapter;
+import com.project.lithodemo.recyclerview.adapter.RecyclerViewAdapter;
 import com.project.lithodemo.data.SampleData;
 
 public class RecyclerViewActivity extends AppCompatActivity {

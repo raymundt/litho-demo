@@ -1,4 +1,4 @@
-package com.project.lithodemo.component;
+package com.project.lithodemo.lithoview.component;
 
 import android.view.View;
 import android.widget.Toast;
@@ -17,7 +17,7 @@ import com.facebook.litho.widget.Text;
 import static com.facebook.yoga.YogaEdge.ALL;
 
 @LayoutSpec
-public class ArticleTextOnlyItemSpec {
+public class TextItemSpec {
 
     @OnCreateLayout
     static ComponentLayout onCreateLayout(
@@ -31,8 +31,8 @@ public class ArticleTextOnlyItemSpec {
                                 .text(title)
                                 .textSizeSp(20)
                                 .withLayout()
-                                .clickHandler(ArticleTextOnlyItem.onClick(c)))
-                .clickHandler(ArticleSmallImageItem.onClick(c))
+                                .clickHandler(TextItem.onClick(c)))
+                .clickHandler(TextItem.onClick(c))
                 .build();
     }
 

@@ -1,13 +1,13 @@
-package com.project.lithodemo.viewholder;
+package com.project.lithodemo.recyclerview.viewholder;
 
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.project.lithodemo.R;
-import com.project.lithodemo.object.Article;
+import com.project.lithodemo.data.Article;
 
-public class WebViewHolder extends ArticleViewHolder {
+public class WebViewHolder extends ItemViewHolder {
 
     protected WebView mWebView;
 

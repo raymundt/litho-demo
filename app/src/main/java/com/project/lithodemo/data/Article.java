@@ -1,4 +1,4 @@
-package com.project.lithodemo.object;
+package com.project.lithodemo.data;
 
 public class Article {
 

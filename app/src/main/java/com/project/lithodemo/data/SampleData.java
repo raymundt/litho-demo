@@ -1,14 +1,12 @@
 package com.project.lithodemo.data;
 
-import com.project.lithodemo.object.Article;
-
 import java.util.ArrayList;
 
-import static com.project.lithodemo.object.Article.DisplayType.LARGE_IMAGE;
-import static com.project.lithodemo.object.Article.DisplayType.SMALL_IMAGE;
-import static com.project.lithodemo.object.Article.DisplayType.TEXT_ONLY;
-import static com.project.lithodemo.object.Article.DisplayType.THREE_IMAGES;
-import static com.project.lithodemo.object.Article.DisplayType.WEB;
+import static com.project.lithodemo.data.Article.DisplayType.LARGE_IMAGE;
+import static com.project.lithodemo.data.Article.DisplayType.SMALL_IMAGE;
+import static com.project.lithodemo.data.Article.DisplayType.TEXT_ONLY;
+import static com.project.lithodemo.data.Article.DisplayType.THREE_IMAGES;
+import static com.project.lithodemo.data.Article.DisplayType.WEB;
 
 public class SampleData {
 

@@ -1,17 +1,16 @@
-package com.project.lithodemo.viewholder;
+package com.project.lithodemo.recyclerview.viewholder;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
 import com.project.lithodemo.R;
-import com.project.lithodemo.object.Article;
+import com.project.lithodemo.data.Article;
 
-public class ArticleViewHolder extends RecyclerView.ViewHolder {
+public class TextViewHolder extends ItemViewHolder {
 
     protected TextView mTitleLabel;
 
-    public ArticleViewHolder(View v) {
+    public TextViewHolder(View v) {
         super(v);
         mTitleLabel = (TextView) v.findViewById(R.id.lbl_title);
     }

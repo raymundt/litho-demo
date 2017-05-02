@@ -1,4 +1,4 @@
-package com.project.lithodemo.component;
+package com.project.lithodemo.lithoview.component;
 
 import com.facebook.litho.Column;
 import com.facebook.litho.ComponentContext;

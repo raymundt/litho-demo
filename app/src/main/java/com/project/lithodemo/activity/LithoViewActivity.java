@@ -10,7 +10,7 @@ import com.facebook.litho.ComponentContext;
 import com.facebook.litho.LithoView;
 import com.facebook.litho.widget.LinearLayoutInfo;
 import com.facebook.litho.widget.Recycler;
-import com.project.lithodemo.adapter.LithoRecyclerAdapter;
+import com.project.lithodemo.lithoview.adapter.LithoRecyclerAdapter;
 import com.project.lithodemo.data.SampleData;
 
 public class LithoViewActivity extends AppCompatActivity {

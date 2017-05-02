@@ -1,4 +1,4 @@
-package com.project.lithodemo.component;
+package com.project.lithodemo.lithoview.component;
 
 import android.view.View;
 import android.widget.Toast;
@@ -7,9 +7,9 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.drawable.ScalingUtils;
 import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.litho.ClickEvent;
+import com.facebook.litho.Column;
 import com.facebook.litho.ComponentContext;
 import com.facebook.litho.ComponentLayout;
-import com.facebook.litho.Row;
 import com.facebook.litho.annotations.FromEvent;
 import com.facebook.litho.annotations.LayoutSpec;
 import com.facebook.litho.annotations.OnCreateLayout;
@@ -21,10 +21,10 @@ import com.facebook.litho.widget.Text;
 import com.project.lithodemo.R;
 
 import static com.facebook.yoga.YogaEdge.ALL;
-import static com.facebook.yoga.YogaEdge.RIGHT;
+import static com.facebook.yoga.YogaEdge.TOP;
 
 @LayoutSpec
-public class ArticleSmallImageItemSpec {
+public class LargeImageItemSpec {
 
     @PropDefault
     protected static final float aspectRatio = 16f / 9;
@@ -38,26 +38,23 @@ public class ArticleSmallImageItemSpec {
         final DraweeController controller = Fresco.newDraweeControllerBuilder()
                 .setUri(image)
                 .build();
-        return Row.create(c)
+        return Column.create(c)
                 .paddingDip(ALL, 10)
-                .child(
-                        Text.create(c)
-                                .text(title)
-                                .textSizeSp(20)
-                                .textColorRes(R.color.black)
-                                .withLayout()
-                                .widthDip(0)
-                                .marginDip(RIGHT, 6)
-                                .flex(1))
                 .child(
                         FrescoImage.create(c)
                                 .controller(controller)
                                 .aspectRatio(aspectRatio)
                                 .actualImageScaleType(ScalingUtils.ScaleType.CENTER_CROP)
                                 .placeholderImageRes(R.drawable.placeholder)
+                                .withLayout())
+                .child(
+                        Text.create(c)
+                                .text(title)
+                                .textSizeSp(20)
+                                .textColorRes(R.color.black)
                                 .withLayout()
-                                .widthDip(100))
-                .clickHandler(ArticleSmallImageItem.onClick(c))
+                                .marginDip(TOP, 6))
+                .clickHandler(LargeImageItem.onClick(c))
                 .build();
     }
 

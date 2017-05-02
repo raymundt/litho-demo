@@ -1,17 +1,17 @@
-package com.project.lithodemo.viewholder;
+package com.project.lithodemo.recyclerview.viewholder;
 
 import android.net.Uri;
 import android.view.View;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.project.lithodemo.R;
-import com.project.lithodemo.object.Article;
+import com.project.lithodemo.data.Article;
 
-public class ArticleSmallImageViewHolder extends ArticleViewHolder {
+public class SmallImageViewHolder extends TextViewHolder {
 
     protected SimpleDraweeView mThumbnailImage;
 
-    public ArticleSmallImageViewHolder(View v) {
+    public SmallImageViewHolder(View v) {
         super(v);
         mThumbnailImage = (SimpleDraweeView) v.findViewById(R.id.img_thumbnail);
     }
