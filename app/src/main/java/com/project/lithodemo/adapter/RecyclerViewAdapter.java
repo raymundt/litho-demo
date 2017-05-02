@@ -11,6 +11,7 @@ import com.project.lithodemo.viewholder.ArticleLargeImageViewHolder;
 import com.project.lithodemo.viewholder.ArticleSmallImageViewHolder;
 import com.project.lithodemo.viewholder.ArticleThreeImagesViewHolder;
 import com.project.lithodemo.viewholder.ArticleViewHolder;
+import com.project.lithodemo.viewholder.WebViewHolder;
 
 import java.util.ArrayList;
 
@@ -43,6 +44,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<ArticleViewHolder>
             case THREE_IMAGES:
                 v = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_three_images, parent, false);
                 vh = new ArticleThreeImagesViewHolder(v);
+                break;
+            case WEB:
+                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_web, parent, false);
+                vh = new WebViewHolder(v);
                 break;
             case SMALL_IMAGE:
             default:

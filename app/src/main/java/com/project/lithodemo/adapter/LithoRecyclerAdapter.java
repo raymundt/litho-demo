@@ -8,6 +8,7 @@ import com.project.lithodemo.component.ArticleLargeImageItem;
 import com.project.lithodemo.component.ArticleSmallImageItem;
 import com.project.lithodemo.component.ArticleTextOnlyItem;
 import com.project.lithodemo.component.ArticleThreeImagesItem;
+import com.project.lithodemo.component.WebItem;
 import com.project.lithodemo.object.Article;
 
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 import static com.project.lithodemo.object.Article.DisplayType.LARGE_IMAGE;
 import static com.project.lithodemo.object.Article.DisplayType.TEXT_ONLY;
 import static com.project.lithodemo.object.Article.DisplayType.THREE_IMAGES;
+import static com.project.lithodemo.object.Article.DisplayType.WEB;
 
 public class LithoRecyclerAdapter extends RecyclerBinder {
 
@@ -40,22 +42,24 @@ public class LithoRecyclerAdapter extends RecyclerBinder {
                         ArticleTextOnlyItem.create(mComponentContext)
                                 .title(article.getTitle())
                                 .build());
-            }
-            else if (article.getDisplayType() == LARGE_IMAGE) {
+            } else if (article.getDisplayType() == LARGE_IMAGE) {
                 componentInfoBuilder.component(
                         ArticleLargeImageItem.create(mComponentContext)
                                 .title(article.getTitle())
                                 .image(article.getImage())
                                 .build());
-            }
-            else if (article.getDisplayType() == THREE_IMAGES) {
+            } else if (article.getDisplayType() == WEB) {
+                componentInfoBuilder.component(
+                        WebItem.create(mComponentContext)
+                                .url(article.getLink())
+                                .build());
+            } else if (article.getDisplayType() == THREE_IMAGES) {
                 componentInfoBuilder.component(
                         ArticleThreeImagesItem.create(mComponentContext)
                                 .title(article.getTitle())
                                 .images(article.getImages())
                                 .build());
-            }
-            else {
+            } else {
                 componentInfoBuilder.component(
                         ArticleSmallImageItem.create(mComponentContext)
                                 .title(article.getTitle())

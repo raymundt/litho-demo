@@ -7,11 +7,13 @@ public class Article {
         SMALL_IMAGE,
         LARGE_IMAGE,
         THREE_IMAGES,
+        WEB
     }
 
     private String title;
     private DisplayType displayType;
     private String[] images;
+    private String link;
 
     public Article(String title, DisplayType displayType, String[] images) {
         this.title = title;
@@ -45,5 +47,13 @@ public class Article {
 
     public String getImage() {
         return images != null && images.length > 0 ? images[0] : null;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
     }
 }

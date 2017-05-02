@@ -8,6 +8,7 @@ import static com.project.lithodemo.object.Article.DisplayType.LARGE_IMAGE;
 import static com.project.lithodemo.object.Article.DisplayType.SMALL_IMAGE;
 import static com.project.lithodemo.object.Article.DisplayType.TEXT_ONLY;
 import static com.project.lithodemo.object.Article.DisplayType.THREE_IMAGES;
+import static com.project.lithodemo.object.Article.DisplayType.WEB;
 
 public class SampleData {
 
@@ -122,6 +123,10 @@ public class SampleData {
             if (i%15 == 0) {
                 data.get(i).setDisplayType(TEXT_ONLY);
                 data.get(i).setImages(null);
+            }
+            else if (i%12 == 0) {
+                data.get(i).setDisplayType(WEB);
+                data.get(i).setLink("http://fblitho.com");
             }
             else if (i%10 == 0)
                 data.get(i).setDisplayType(LARGE_IMAGE);
