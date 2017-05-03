@@ -15,7 +15,7 @@ public class WebSpec {
 
     @OnCreateMountContent
     static WebView onCreateMountContent(ComponentContext c) {
-        WebView webView = new WebView(c.getBaseContext());
+        WebView webView = new WebView(c);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         webView.setWebViewClient(new WebViewClient());

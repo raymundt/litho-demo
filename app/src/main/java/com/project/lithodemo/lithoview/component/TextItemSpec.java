@@ -38,6 +38,6 @@ public class TextItemSpec {
 
     @OnEvent(ClickEvent.class)
     static void onClick(ComponentContext c, @FromEvent View view, @Prop String title) {
-        Toast.makeText(c.getBaseContext(), "Clicked " + title, Toast.LENGTH_SHORT).show();
+        Toast.makeText(c, "Clicked " + title, Toast.LENGTH_SHORT).show();
     }
 }
