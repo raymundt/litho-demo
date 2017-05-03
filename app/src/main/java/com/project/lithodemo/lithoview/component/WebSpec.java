@@ -1,5 +1,6 @@
 package com.project.lithodemo.lithoview.component;
 
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -16,7 +17,7 @@ public class WebSpec {
     static WebView onCreateMountContent(ComponentContext c) {
         WebView webView = new WebView(c.getBaseContext());
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setUseWideViewPort(true);
+        webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         webView.setWebViewClient(new WebViewClient());
         return webView;
     }

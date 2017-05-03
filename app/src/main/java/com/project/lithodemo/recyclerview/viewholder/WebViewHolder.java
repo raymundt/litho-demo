@@ -1,6 +1,7 @@
 package com.project.lithodemo.recyclerview.viewholder;
 
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -15,7 +16,7 @@ public class WebViewHolder extends ItemViewHolder {
         super(v);
         mWebView = (WebView) v.findViewById(R.id.wv_web);
         mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.getSettings().setUseWideViewPort(true);
+        mWebView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
         mWebView.setWebViewClient(new WebViewClient());
     }
 

@@ -2,6 +2,7 @@ package com.project.lithodemo.data;
 
 import java.util.ArrayList;
 
+import static com.project.lithodemo.config.Config.HAS_WEB_CONTENT;
 import static com.project.lithodemo.data.Article.DisplayType.LARGE_IMAGE;
 import static com.project.lithodemo.data.Article.DisplayType.SMALL_IMAGE;
 import static com.project.lithodemo.data.Article.DisplayType.TEXT_ONLY;
@@ -122,7 +123,7 @@ public class SampleData {
                 data.get(i).setDisplayType(TEXT_ONLY);
                 data.get(i).setImages(null);
             }
-            else if (i%12 == 0) {
+            else if (HAS_WEB_CONTENT && i%12 == 0) {
                 data.get(i).setDisplayType(WEB);
                 data.get(i).setLink("http://fblitho.com");
             }
