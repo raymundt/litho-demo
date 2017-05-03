@@ -13,6 +13,7 @@ import com.facebook.litho.annotations.OnCreateLayout;
 import com.facebook.litho.annotations.OnEvent;
 import com.facebook.litho.annotations.Prop;
 import com.facebook.litho.widget.Text;
+import com.project.lithodemo.R;
 
 import static com.facebook.yoga.YogaEdge.ALL;
 
@@ -30,8 +31,7 @@ public class TextItemSpec {
                         Text.create(c)
                                 .text(title)
                                 .textSizeSp(20)
-                                .withLayout()
-                                .clickHandler(TextItem.onClick(c)))
+                                .textColorRes(R.color.black))
                 .clickHandler(TextItem.onClick(c))
                 .build();
     }

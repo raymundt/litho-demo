@@ -21,7 +21,6 @@ import com.facebook.litho.widget.Text;
 import com.project.lithodemo.R;
 
 import static com.facebook.yoga.YogaEdge.ALL;
-import static com.facebook.yoga.YogaEdge.TOP;
 
 @LayoutSpec
 public class LargeImageItemSpec {
@@ -45,15 +44,12 @@ public class LargeImageItemSpec {
                                 .controller(controller)
                                 .aspectRatio(aspectRatio)
                                 .actualImageScaleType(ScalingUtils.ScaleType.CENTER_CROP)
-                                .placeholderImageRes(R.drawable.placeholder)
-                                .withLayout())
+                                .placeholderImageRes(R.drawable.placeholder))
                 .child(
                         Text.create(c)
                                 .text(title)
                                 .textSizeSp(20)
-                                .textColorRes(R.color.black)
-                                .withLayout()
-                                .marginDip(TOP, 6))
+                                .textColorRes(R.color.black))
                 .clickHandler(LargeImageItem.onClick(c))
                 .build();
     }
