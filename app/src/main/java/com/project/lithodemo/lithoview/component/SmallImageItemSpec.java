@@ -20,6 +20,7 @@ import com.facebook.litho.fresco.FrescoImage;
 import com.facebook.litho.widget.Text;
 import com.project.lithodemo.R;
 
+import static android.text.TextUtils.TruncateAt.END;
 import static com.facebook.yoga.YogaEdge.ALL;
 import static com.facebook.yoga.YogaEdge.RIGHT;
 
@@ -45,8 +46,11 @@ public class SmallImageItemSpec {
                                 .text(title)
                                 .textSizeSp(20)
                                 .textColorRes(R.color.black)
+                                .maxLines(4)
+                                .ellipsize(END)
                                 .withLayout()
                                 .widthDip(0)
+                                .heightDip(100)
                                 .marginDip(RIGHT, 6)
                                 .flex(1))
                 .child(
