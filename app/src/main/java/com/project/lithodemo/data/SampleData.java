@@ -37,7 +37,7 @@ public class SampleData {
         data.add(new Article("Mario Kart 8 deluxe自動轉彎踩油門　新手都可變拓海！", SMALL_IMAGE, new String[] {"https://cdn.hk01.com/media/article/86792/thumbnail/ec2d3cccdbfceac4b8d0ddd3fddaabac.jpg"}));
         data.add(new Article("UNDEFEATED創辦人James Bond：最喜愛的鞋履是.......", SMALL_IMAGE, new String[] {"https://cdn.hk01.com/media/article/85178/thumbnail/8f6e2bc2a63e1c24e24b0b82acb574a8.jpg"}));
         data.add(new Article("【Zelda攻略】薩爾達荒野之息　FANS製詳盡地圖 自選所需自由縮放", SMALL_IMAGE, new String[] {"https://cdn.hk01.com/media/article/87061/thumbnail/aa32edc3abf5aeb6f1b97780c42e7506.jpg"}));
-        data.add(new Article("【AKB48總選】注目の100人小背心上陣　渡邊麻友清純碎花賣氣質", SMALL_IMAGE, new String[] {"https://cdn.hk01.com/media/article/87042/thumbnail/559b86ccb0e610bead67d74c2f734610.jpg"}));
+        data.add(new Article("【AKB48總選】注目の100人小背心上陣　渡邊麻友清純碎花賣氣質", SMALL_IMAGE, new String[] {"https://cdn.hk01.com/media/article/87042/thumbnail/cf9cd1118388608a2a5831a5f3272c75.jpg"}));
         data.add(new Article("【乃木坂46寫真．多圖】衛藤美彩自封臀王　潛力股硬撼白石麻衣", SMALL_IMAGE, new String[] {"https://cdn.hk01.com/media/article/87019/thumbnail/17971076f0722e9ef21d08a6d2ff2979.jpg"}));
         data.add(new Article("FF VII remake版Cloud　Play Arts 改人偶型格圖集", SMALL_IMAGE, new String[] {"https://cdn.hk01.com/media/article/87031/thumbnail/199d1cddcfa1b9983b7654bea25458f9.jpg"}));
         data.add(new Article("Samsung Galaxy S8、S8+行貨抵港速報　林海峰撐場唱好（有片）", SMALL_IMAGE, new String[] {"https://cdn.hk01.com/media/article/86819/thumbnail/627fd78223b316009b1661f103759a24.jpg"}));
